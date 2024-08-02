@@ -1,0 +1,47 @@
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 20px; /* Ajuste para evitar que el contenido quede oculto detrás del menú fijo */
+}
+
+/* Flexbox para header */
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff; /* Color azul para el menú de navegación */
+    transition: box-shadow 0.3s ease; /* Transición suave para el efecto de sombra */
+}
+header .navbar:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil cuando el ratón pasa sobre el menú */
+}
+
+/* Estilos del logo y los enlaces del menú */
+.navbar-brand {
+    color: #fff; /* Color blanco para el texto del logo */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; /* Color dorado para los enlaces al pasar el ratón */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #d0dce7; /* Color azul oscuro para el footer */
+    color: #080808; /* Color blanco para el texto en el footer */
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-nav {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+
+
